@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Instrument Sans', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Serif', 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif text-mana-dark mb-6;
+  }
+
+  .section-subheading {
+    @apply text-lg md:text-xl text-mana-dark/70 max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-mana-gold text-white font-sans font-medium text-sm uppercase tracking-widest hover:bg-mana-gold/90 transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-3 border border-white text-white font-sans font-medium text-sm uppercase tracking-widest hover:bg-white/10 transition-colors duration-300;
+  }
+}
